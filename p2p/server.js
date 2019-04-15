@@ -8,7 +8,12 @@ const feed = hypercore(ram, {overwrite: true});
 let swarm;
 
 feed.on("ready", function() {
-  console.log(feed.key.toString("hex"));
+  fs.writeFile("./key", feed.key.toString("hex"), function(err) {
+    if(err) {
+      return console.log(err);
+    }
+    console.log("The file was saved!");
+  }); 
 
   swarm = hyperdiscovery(feed);
 
