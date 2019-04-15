@@ -5,6 +5,7 @@ node_modules/
 *.mkv
 *.mp*
 .env
+*.idea
 .env.test
 .vscode
 .history
