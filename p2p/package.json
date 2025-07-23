@@ -16,5 +16,8 @@
     "hyperdiscovery": "^8.0.0",
     "performance-now": "^2.1.0",
     "random-access-memory": "^3.1.1"
+  },
+  "overrides": {
+    "dns-packet@<=5.2.2": "5.2.2"
   }
 }
